@@ -1,0 +1,63 @@
+.dashboard-link:link, .dashboard-link:visited {
+  color: #00ff00;
+  text-decoration: none;
+  target-new: none;
+}
+
+.dashboard-link:hover {
+  color: #00dd00;
+  text-decoration: none;
+  target-new: none;
+}
+
+.nav-table {
+  background-color: #434343;
+  margin-bottom: 1em;
+}
+
+.nav-table td {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.nav-table a {
+  color: #00ff00;
+  text-decoration: none;
+  target-new: none;
+}
+
+.nav-table a:hover {
+  color: #00dd00;
+  text-decoration: none;
+  target-new: none;
+}
+
+.nav-cell-current {
+  background-color: #00ff00;
+}
+
+.nav-cell-current a {
+  color: #434343;
+  text-decoration: none;
+  target-new: none;
+}
+
+.nav-cell-current a:hover {
+  color: #606060;
+  text-decoration: none;
+  target-new: none;
+}
+
+.result-table {
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.button-cell {
+  border: none !important;
+}
