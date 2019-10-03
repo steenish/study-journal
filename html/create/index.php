@@ -67,7 +67,7 @@
           <label for="date">Date </label>
         </td>
         <td>
-          <input id="date" name="date" type="date" required>
+          <input id="date" name="date" type="date" value="<?php echo date("Y-m-d")?>" required>
         </td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@
         </td>
       </tr>
     </table>
-    <textarea id="text" name="text" rows="5" cols="50" required></textarea>
+    <textarea id="text" name="text" rows="5" cols="50" maxlength="500" required></textarea>
     <br>
     <input type="submit" value="Save">
     <?php

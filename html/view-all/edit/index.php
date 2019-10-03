@@ -113,7 +113,7 @@
         </td>
       </tr>
     </table>
-    <textarea id="text" name="text" rows="5" cols="50" required><?php echo $text;?></textarea>
+    <textarea id="text" name="text" rows="5" cols="50" maxlength="500" required><?php echo $text;?></textarea>
     <br>
     <input name="edited" type="submit" value="Save">
     <?php
