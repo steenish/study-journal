@@ -6,14 +6,14 @@ https://axiomq.com/blog/backup-and-restore-a-postgresql-database/
 psql: NeverForget
 
 ###### Backup (as astee in home folder):
-- Sign in to pluggdagbok.
-- command: pg_dump -F p > ~/backup.sql
+- Sign in to postgres.
+- command: pg_dump pluggdagbok > /var/tmp/backup.sql
 - Sign out.
-- command: sudo mv ../pluggdagbok/backup.sql Documents/temp/
+- command: sudo mv /var/tmp/backup.sql <new location>
 - Store anywhere (preferably dropbox).
 
 ###### Restore (as astee in home folder):
-- Place backup.sql in pluggdagbok home folder.
-- Sign in to pluggdagbok.
-- command: psql < backup.sql
-- Sign out.
+- Place backup.sql in some directory A.
+- Create the database pluggdagbok, add user pluggdagbok with all permissions.
+- EITHER command: psql < A/backup.sql
+- OR log into psql and run \i A/backup.sql

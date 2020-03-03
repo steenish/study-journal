@@ -1,8 +1,8 @@
 echo "Entering correct directory"
-cd /home/astee/Documents/pluggdagbok-project
-echo "Signing in to user 'pluggdagbok'"
-su -c "pg_dump -F p > /var/tmp/backup.sql" -m "pluggdagbok"
+cd /home/steen/Documents/git/study-journal/backup
+echo "Signing in to user 'postgres'"
+sudo su -c "pg_dump pluggdagbok > /var/tmp/backup.sql" -m "postgres"
 echo "Database dumped in /var/tmp/backup.sql"
-echo "Moving backup.sql to /home/astee/Documents/temp as superuser 'astee'"
-sudo mv /var/tmp/backup.sql /home/astee/Documents/temp/
-echo "backup.sql moved to /home/astee/Documents/temp"
+echo "Moving backup.sql to /home/steen/Documents/temp as superuser 'steen'"
+sudo mv /var/tmp/backup.sql /home/steen/Documents/temp/
+echo "backup.sql moved to /home/steen/Documents/temp"
